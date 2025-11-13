@@ -93,7 +93,7 @@ class EstudianteController extends Controller
     {
         $created = [];
 
-        for ($i = 1; $i <= 10; $i++) {
+        for ($i = 1; $i <= 500000; $i++) {
             $t = Estudiante::create([
                 'nombre' => ' nombre automatico ' . now()->format('YmdHis') . '_' . $i,
                 'estudios' => ' estudios ' . now()->format('YmdHis') . '_' . $i,
